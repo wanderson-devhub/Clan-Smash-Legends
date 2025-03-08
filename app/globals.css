@@ -79,16 +79,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1D1E4D;
+  background: #1d1e4d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #168AE9, #31A4FD);
+  background: linear-gradient(to bottom, #168ae9, #31a4fd);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #4663B9, #4E69C2);
+  background: linear-gradient(to bottom, #4663b9, #4e69c2);
 }
 
 /* Animations */
@@ -109,7 +109,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
   100% {
     transform: scale(1);
@@ -124,6 +124,48 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
+/* Toast animations */
+@keyframes toastEnter {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toastLeave {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
+.toast-enter {
+  animation: toastEnter 0.3s ease-out forwards;
+}
+
+.toast-leave {
+  animation: toastLeave 0.3s ease-in forwards;
+}
+
+/* Custom toast styling */
+.custom-toast-container {
+  height: auto !important;
+  max-height: fit-content !important;
+}
+
+.custom-toast-wrapper {
+  height: auto !important;
+  max-height: 120px !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
   .mobile-card {
@@ -131,8 +173,43 @@
     margin: 0;
     transform: none !important;
   }
-  
+
   .mobile-content {
     transform: none !important;
   }
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes enter {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leave {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
+
