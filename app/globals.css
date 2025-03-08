@@ -279,3 +279,26 @@
 .animate-slideOut {
   animation: slideOut 0.3s ease-in-out forwards;
 }
+
+@keyframes welcomeText {
+  0% {
+    transform: scale(0.97);
+    opacity: 0.8;
+  }
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.97);
+    opacity: 0.8;
+  }
+}
+
+.animate-welcome {
+  animation: welcomeText 3s ease-in-out infinite;
+}
