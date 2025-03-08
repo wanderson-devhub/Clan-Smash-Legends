@@ -16,7 +16,7 @@ export default function AchievementsSection() {
           <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg group hover:scale-105 transition-transform">
             <div className="mobile-content skew-x-12">
               <img
-                src="https://images.unsplash.com/photo-1536148935331-408321065b18?auto=format&fit=crop&q=80&w=800&h=450"
+                src="https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?auto=format&fit=crop&q=80&w=800&h=450"
                 alt="Grupo WhatsApp"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
