@@ -48,7 +48,7 @@ export default function JoinSection() {
                   <li>Ambiente amigável e acolhedor</li>
                   <li>Desenvolva trabalho em equipe</li>
                   <li>Mentoria de jogadores experientes</li>
-                  <li>Faça amizade com outros gamers</li>
+                  <li>Faça amizade com outros players</li>
                 </ul>
               </div>
             </div>
