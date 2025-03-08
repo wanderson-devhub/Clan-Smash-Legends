@@ -13,8 +13,6 @@ import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/hooks/use-toast";
 import { WelcomeToast } from "@/components/ui/layout/welcome-toast";
 
-
-
 export default function Home() {
   const { toast } = useToast();
 

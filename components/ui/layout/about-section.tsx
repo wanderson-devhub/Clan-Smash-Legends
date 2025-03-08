@@ -3,7 +3,7 @@ import { differenceInDays, format } from "date-fns";
 import { ptBR } from "date-fns/locale";
 
 export default function AboutSection() {
-  const clanCreationDate = new Date("2024-03-27");
+  const clanCreationDate = new Date("2024-01-27");
   const today = new Date();
   const daysActive = differenceInDays(today, clanCreationDate);
 
