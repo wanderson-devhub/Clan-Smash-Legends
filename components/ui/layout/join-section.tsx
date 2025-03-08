@@ -76,7 +76,7 @@ export default function JoinSection() {
                     ></path>
                   </svg>
                 )}
-                Candidate-se Agora
+                Candidate-se agora
               </div>
             </button>
           </div>

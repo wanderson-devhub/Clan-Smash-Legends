@@ -72,7 +72,7 @@ export default function HeroSection() {
                         ></path>
                       </svg>
                     )}
-                    Junte-se Agora
+                    Junte-se
                   </span>
                 </button>
               </a>
