@@ -7,15 +7,15 @@ export default function StatsSection() {
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg">
           <div className="mobile-content skew-x-12 flex flex-col items-center">
             <Trophy className="h-12 w-12 text-[#F3F9FE] mb-4" />
-            <h3 className="text-2xl font-bold text-white">250+</h3>
+            <h3 className="text-2xl font-bold text-white">50+</h3>
             <p className="text-[#BCB099]">Torneios Vencidos</p>
           </div>
         </div>
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg">
           <div className="mobile-content skew-x-12 flex flex-col items-center">
             <Users className="h-12 w-12 text-[#F3F9FE] mb-4" />
-            <h3 className="text-2xl font-bold text-white">100+</h3>
-            <p className="text-[#BCB099]">Membros Ativos</p>
+            <h3 className="text-2xl font-bold text-white">20</h3>
+            <p className="text-[#BCB099]">Ocupação Máxima</p>
           </div>
         </div>
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg">

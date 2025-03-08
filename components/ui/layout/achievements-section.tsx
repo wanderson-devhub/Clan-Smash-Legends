@@ -16,34 +16,34 @@ export default function AchievementsSection() {
           <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg group hover:scale-105 transition-transform">
             <div className="mobile-content skew-x-12">
               <img
-                src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&q=80&w=800&h=450"
-                alt="Vitória do Torneio"
+                src="https://images.unsplash.com/photo-1536148935331-408321065b18?auto=format&fit=crop&q=80&w=800&h=450"
+                alt="Grupo WhatsApp"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-bold text-white mb-2">Campeonato Mundial 2024</h3>
-              <p className="text-[#BCB099]">Primeiro lugar no torneio global com pontuação perfeita.</p>
+              <h3 className="text-xl font-bold text-white mb-2">Comunidade WhatsApp</h3>
+              <p className="text-[#BCB099]">Grupo exclusivo disponível para membros.</p>
             </div>
           </div>
           <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg group hover:scale-105 transition-transform">
             <div className="mobile-content skew-x-12">
               <img
-                src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&q=80&w=800&h=450"
-                alt="Campeonato Regional"
+                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=800&h=450"
+                alt="Instagram"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-bold text-white mb-2">Campeões Regionais</h3>
-              <p className="text-[#BCB099]">Dominamos todos os torneios regionais por 3 temporadas consecutivas.</p>
+              <h3 className="text-xl font-bold text-white mb-2">Instagram em Crescimento</h3>
+              <p className="text-[#BCB099]">Grupo disponível para novos membros no Instagram.</p>
             </div>
           </div>
           <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg group hover:scale-105 transition-transform">
             <div className="mobile-content skew-x-12">
               <img
-                src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=800&h=450"
-                alt="Conquista da Equipe"
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=800&h=450"
+                alt="Comunidade"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-bold text-white mb-2">Temporada Perfeita</h3>
-              <p className="text-[#BCB099]">Mantivemos 100% de taxa de vitória durante a Temporada 8.</p>
+              <h3 className="text-xl font-bold text-white mb-2">Respeito e Valores</h3>
+              <p className="text-[#BCB099]">Comunidade baseada em respeito mútuo, ética e valores compartilhados.</p>
             </div>
           </div>
         </div>
@@ -51,4 +51,3 @@ export default function AchievementsSection() {
     </section>
   )
 }
-

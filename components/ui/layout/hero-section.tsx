@@ -1,12 +1,25 @@
 import { ClanName } from "@/app/page";
+import { useToast } from "@/hooks/use-toast";
+import { CheckIcon } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const handleCopyId = () => {
-    navigator.clipboard.writeText("ClanName123");
+    navigator.clipboard.writeText("ggeuy5adqudk");
+  };
+
+  const handleJoinClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      window.location.href = "#join";
+    }, 1000);
   };
 
   return (
@@ -32,10 +45,38 @@ export default function HeroSection() {
               Junte-se ao clã mais versátil do Smash Legends
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-              <button className="transform skew-x-12 bg-gradient-to-b from-[#168AE9] to-[#31A4FD] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity">
-                <span className="-skew-x-12 block">Junte-se Agora</span>
-              </button>
-
+              <a href="#join" onClick={handleJoinClick}>
+                <button
+                  disabled={isLoading}
+                  className="disabled:opacity-70 transform skew-x-12 bg-gradient-to-b from-[#168AE9] to-[#31A4FD] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
+                >
+                  <span className="-skew-x-12 flex items-center gap-2">
+                    {isLoading && (
+                      <svg
+                        className="animate-spin h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                    )}
+                    Junte-se Agora
+                  </span>
+                </button>
+              </a>
               <button
                 onClick={() => setIsModalOpen(true)}
                 className="transform skew-x-12 bg-gradient-to-b from-[#4663B9] to-[#4E69C2] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
@@ -46,6 +87,8 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 animate-fadeIn p-1">
           <div className="bg-[#1D1E4D] p-8 rounded-lg max-w-md w-full mx-4 sm:mx-auto animate-slideIn">
@@ -55,9 +98,25 @@ export default function HeroSection() {
             <div className="mb-4">
               <p className="text-gray-300 mb-2">ID do Clã:</p>
               <div className="flex items-center gap-2 bg-[#2A2B5D] p-2 rounded">
-                <span className="text-white">ClanName123</span>
+                <span className="text-white">ggeuy5adqudk</span>
                 <button
-                  onClick={handleCopyId}
+                  onClick={() => {
+                    handleCopyId();
+                    toast({
+                      variant: "clan",
+                      title: (
+                        <div className="flex items-center gap-2 p-3 rounded-lg">
+                          <div className="bg-emerald-500 rounded-full p-1">
+                            <CheckIcon className="w-4 h-4 text-white" />
+                          </div>
+                          <span className="text-emerald-500 font-medium">
+                            ID copiado com sucesso!
+                          </span>
+                        </div>
+                      ) as unknown as string,
+                      duration: 2000,
+                    });
+                  }}
                   className="bg-blue-500 px-3 py-1 rounded text-sm text-white hover:bg-blue-600"
                 >
                   Copiar
@@ -67,10 +126,10 @@ export default function HeroSection() {
             <div className="mb-6">
               <h3 className="text-white font-semibold mb-2">Requisitos:</h3>
               <ul className="text-gray-300 list-disc list-inside">
-                <li>Nível mínimo: 30</li>
-                <li>Troféus: 2000+</li>
+                <li>Nível mínimo: 10+</li>
+                <li>Troféus: 1000+</li>
                 <li>Participação ativa em eventos</li>
-                <li>Comunicação no Discord</li>
+                <li>Comunicação nos grupos do clã</li>
               </ul>
             </div>
             <button
