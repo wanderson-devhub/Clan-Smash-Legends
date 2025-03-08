@@ -15,6 +15,7 @@ export default function Footer() {
             <div className="flex space-x-6">
               <a
                 href="https://github.com/wanderson-devhub"
+                target="_blank"
                 className="hover:text-[#BCB099] transition-colors"
               >
                 <Image
@@ -27,6 +28,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://linkedin.com/in/wanderson-devhub"
+                target="_blank"
                 className="hover:text-[#BCB099] transition-colors"
               >
                 <Image

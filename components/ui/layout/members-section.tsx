@@ -8,7 +8,6 @@ export default function MembersSection() {
     navigator.clipboard.writeText("ggeuy5adqudk");
   };
 
-
   return (
     <section
       id="members"
