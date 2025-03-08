@@ -8,7 +8,7 @@ export default function AboutSection() {
   const daysActive = differenceInDays(today, clanCreationDate)
 
   return (
-    <section id="about" className="py-12 px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]">
       <div className="max-w-7xl mx-auto">
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-8 rounded-lg">
           <div className="mobile-content skew-x-12">
@@ -18,7 +18,7 @@ export default function AboutSection() {
             </div>
             <div className="text-[#F3F9FE] mb-6">
               <p className="mb-4">
-                Lord Wolf é um dos clãs mais prestigiados do Smash Legends. Valorizamos trabalho em equipe, estratégia e
+                TeenWolf é um dos clãs mais prestigiados do Smash Legends. Valorizamos trabalho em equipe, estratégia e
                 dedicação. Nossos membros são cuidadosamente selecionados para manter nossos altos padrões e vantagem
                 competitiva.
               </p>

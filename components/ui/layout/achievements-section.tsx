@@ -7,7 +7,7 @@ export default function AchievementsSection() {
         <div className="text-center mb-12">
           <div className="flex justify-center items-center mb-4">
             <Crown className="h-8 w-8 text-[#4663B9] mr-2" />
-            <h2 className="text-3xl font-bold bg-gradient-to-b from-[#2A2464] via-[#324E84] to-[#3F4C8C] bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold bg-gradient-to-b from-[#3A34A4] via-[#4268B0] to-[#5A6CD8] bg-clip-text text-transparent">
               Nossas Conquistas
             </h2>
           </div>

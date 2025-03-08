@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MenuIcon, DogIcon as Wolf } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -23,8 +23,8 @@ export default function Navbar() {
                 draggable="false"
                 onContextMenu={(e) => e.preventDefault()}
               />
-              <span className="ml-2 font-bold text-2xl bg-gradient-to-b from-[#F3F9FE] to-[#BCB099] text-transparent bg-clip-text">
-                Lord Wolf
+              <span className="font-bold italic w-[120px] text-2xl bg-gradient-to-b from-[#F3F9FE] to-[#BCB099] text-transparent bg-clip-text">
+                TeenWolf
               </span>
             </a>
           </div>

@@ -2,11 +2,11 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1D1E4D] text-[#F3F9FE] py-8 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-b from-[#2D2E6D] via-[#2D2E6D] to-[#1D1E4D] text-[#F3F9FE] py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p>© 2024 Clã Lord Wolf. Todos os direitos reservados.</p>
+            <p>© 2024 Clã TeenWolf. Todos os direitos reservados.</p>
           </div>
           <div className="flex space-x-6">
             <a href="https://github.com" className="hover:text-[#BCB099] transition-colors">

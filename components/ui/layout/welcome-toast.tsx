@@ -9,7 +9,7 @@ export function WelcomeToast() {
           height={48}
           className="h-12 w-12 rounded-full"
           src="/images/flare.png"
-          alt="Perfil"
+          alt="Welcome toast"
           draggable="false"
           onContextMenu={(e) => e.preventDefault()}
         />

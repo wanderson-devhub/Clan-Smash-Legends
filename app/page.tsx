@@ -25,12 +25,11 @@ export default function Home() {
           <WelcomeToast />
         </div>
       ) as unknown as string,
-      
     });
   }, [toast]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0F1133] to-[#1B1F40]">
+    <div className="overflow-x-hidden min-h-screen bg-gradient-to-b from-[#0F1133] to-[#1B1F40]">
       <Toaster />
       <Navbar />
       <HeroSection />

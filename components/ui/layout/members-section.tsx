@@ -2,10 +2,10 @@ import { Crown } from "lucide-react"
 
 export default function MembersSection() {
   return (
-    <section id="members" className="py-12 px-4 sm:px-6 lg:px-8">
+    <section id="members" className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-b from-[#2A2464] via-[#324E84] to-[#3F4C8C] bg-clip-text text-transparent">
-          Nossos Membros Elite
+        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-b from-[#3A34A4] via-[#4268B0] to-[#5A6CD8] bg-clip-text text-transparent">
+          Conheça Nossos Membros Elite
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Member Card 1 - Leader */}
