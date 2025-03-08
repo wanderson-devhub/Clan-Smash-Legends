@@ -67,7 +67,9 @@ export default function Footer() {
                 />
               </a>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=wanderson.brito120@gmail.com&su=Contato via Site&body=Olá, gostaria de entrar em contato, me interessei no seu trabalho e gostaria de saber mais."
+                href={typeof window !== 'undefined' && window.innerWidth < 768 
+                  ? "mailto:wanderson.brito120@gmail.com?subject=Contato via Site&body=Olá, gostaria de entrar em contato, me interessei no seu trabalho e gostaria de saber mais."
+                  : "https://mail.google.com/mail/?view=cm&fs=1&to=wanderson.brito120@gmail.com&su=Contato via Site&body=Olá, gostaria de entrar em contato, me interessei no seu trabalho e gostaria de saber mais."}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#BCB099] transition-colors"
