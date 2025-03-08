@@ -22,20 +22,25 @@ export default function HeroSection() {
   };
 
   return (
-    <section
-      id="home"
-      className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-[url('https://wallpapercave.com/wp/wp13847359.jpg')] bg-no-repeat bg-cover bg-center relative"
-    >
+    <section id="home" className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="videos/background1.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]"></div>
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <div className="relative mb-8">
           <Image
             width={1000}
             height={1000}
-            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2000&h=800"
+            src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=2000&h=800"
             alt="Banner Principal"
-            className="w-full h-[300px] sm:h-[400px] object-cover rounded-lg shadow-2xl"
-          />
+            className="w-full h-[300px] sm:h-[400px] object-cover rounded-lg shadow-2xl backdrop-blur-[8px] filter blur-[1px]"          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D1E4D] via-transparent to-transparent rounded-lg"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 overflow-hidden flex flex-col items-center">
             <h1 className="text-[28px] leading-tight mb-2 sm:text-4xl sm:mb-4 font-bold text-white max-w-[90%] mx-auto">
