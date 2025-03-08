@@ -1,4 +1,3 @@
-import { ClanName } from "@/app/page";
 import { useToast } from "@/hooks/use-toast";
 import { CheckIcon } from "lucide-react";
 import Image from "next/image";
@@ -39,7 +38,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D1E4D] via-transparent to-transparent rounded-lg"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 overflow-hidden flex flex-col items-center">
             <h1 className="text-[28px] leading-tight mb-2 sm:text-4xl sm:mb-4 font-bold bg-gradient-to-b from-[#8A84FF] via-[#92CEFF] to-[#AFBBFF] bg-clip-text text-transparent max-w-[90%] mx-auto">
-              Bem-vindo ao Clã <ClanName />
+              Bem-vindo ao Clã TeenWolf
             </h1>
             <p className="text-base sm:text-lg text-[#80befc] drop-shadow-lg mb-6 max-w-[90%] mx-auto">
               Junte-se ao clã mais versátil do Smash Legends

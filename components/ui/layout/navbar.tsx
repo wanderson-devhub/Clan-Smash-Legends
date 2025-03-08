@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
-import { ClanName } from "@/app/page";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +24,7 @@ export default function Navbar() {
                 onContextMenu={(e) => e.preventDefault()}
               />
               <span className="font-bold italic w-[120px] text-2xl bg-gradient-to-b from-[#F3F9FE] to-[#BCB099] text-transparent bg-clip-text">
-                <ClanName />
+                TeenWolf
               </span>
             </a>
           </div>

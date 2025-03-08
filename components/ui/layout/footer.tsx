@@ -1,6 +1,5 @@
-import { ClanName } from "@/app/page";
-import { LinkedinIcon, MailIcon } from "lucide-react";
 import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-[#2D2E6D] via-[#2D2E6D] to-[#1D1E4D] text-[#F3F9FE] py-8 px-4 sm:px-6 lg:px-8">
@@ -8,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p>
-              © 2024 Clã <ClanName />. Todos os direitos reservados.
+              © 2024 Clã TeenWolf. Todos os direitos reservados.
             </p>
           </div>
           <div className="flex flex-col items-end">
