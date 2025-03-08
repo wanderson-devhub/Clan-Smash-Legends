@@ -1,3 +1,4 @@
+import { ClanName } from "@/app/page";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -5,7 +6,7 @@ export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleCopyId = () => {
-    navigator.clipboard.writeText("TEENWOLF123");
+    navigator.clipboard.writeText("ClanName123");
   };
 
   return (
@@ -25,7 +26,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D1E4D] via-transparent to-transparent rounded-lg"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 overflow-hidden flex flex-col items-center">
             <h1 className="text-[28px] leading-tight mb-2 sm:text-4xl sm:mb-4 font-bold bg-gradient-to-b from-[#8A84FF] via-[#92CEFF] to-[#AFBBFF] bg-clip-text text-transparent max-w-[90%] mx-auto">
-              Bem-vindo ao Clã TeenWolf
+              Bem-vindo ao Clã <ClanName />
             </h1>
             <p className="text-base sm:text-lg text-[#80befc] drop-shadow-lg mb-6 max-w-[90%] mx-auto">
               Junte-se ao clã mais versátil do Smash Legends
@@ -54,7 +55,7 @@ export default function HeroSection() {
             <div className="mb-4">
               <p className="text-gray-300 mb-2">ID do Clã:</p>
               <div className="flex items-center gap-2 bg-[#2A2B5D] p-2 rounded">
-                <span className="text-white">TEENWOLF123</span>
+                <span className="text-white">ClanName123</span>
                 <button
                   onClick={handleCopyId}
                   className="bg-blue-500 px-3 py-1 rounded text-sm text-white hover:bg-blue-600"

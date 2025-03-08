@@ -1,6 +1,7 @@
 import { Shield } from "lucide-react"
 import { differenceInDays, format } from "date-fns"
 import { ptBR } from "date-fns/locale"
+import { ClanName } from "@/app/page"
 
 export default function AboutSection() {
   const clanCreationDate = new Date("2024-03-27")
@@ -18,7 +19,7 @@ export default function AboutSection() {
             </div>
             <div className="text-[#F3F9FE] mb-6">
               <p className="mb-4">
-                TeenWolf é um dos clãs mais prestigiados do Smash Legends. Valorizamos trabalho em equipe, estratégia e
+                <ClanName /> é um dos clãs mais prestigiados do Smash Legends. Valorizamos trabalho em equipe, estratégia e
                 dedicação. Nossos membros são cuidadosamente selecionados para manter nossos altos padrões e vantagem
                 competitiva.
               </p>

@@ -1,3 +1,4 @@
+import { ClanName } from "@/app/page"
 import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react"
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p>© 2024 Clã TeenWolf. Todos os direitos reservados.</p>
+            <p>© 2024 Clã <ClanName />. Todos os direitos reservados.</p>
           </div>
           <div className="flex space-x-6">
             <a href="https://github.com" className="hover:text-[#BCB099] transition-colors">

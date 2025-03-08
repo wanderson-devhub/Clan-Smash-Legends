@@ -1,3 +1,5 @@
+import { ClanName } from "@/app/page";
+
 export default function JoinSection() {
   return (
     <section id="join" className="py-12 px-4 sm:px-6 lg:px-8">
@@ -8,7 +10,7 @@ export default function JoinSection() {
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-8 rounded-lg max-w-2xl mx-auto">
           <div className="mobile-content skew-x-12">
             <p className="text-[#F3F9FE] mb-6">
-              Pronto para fazer parte de algo lendário? Junte-se ao Lord Wolf e
+              Pronto para fazer parte de algo lendário? Junte-se ao <ClanName /> e
               experimente Smash Legends no seu melhor!
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
