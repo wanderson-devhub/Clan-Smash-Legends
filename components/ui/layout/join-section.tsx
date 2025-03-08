@@ -8,7 +8,11 @@ export default function JoinSection() {
     // Simula um processo de 2 segundos
     setTimeout(() => {
       setIsLoading(false);
-      // Aqui você pode adicionar a próxima ação
+      // Redireciona para o WhatsApp
+      window.open(
+        "https://wa.me/557199201132?text=Olá! Desejo entrar no clã TeenWolf. Meu ID no jogo é: _________. Estou ciente dos requisitos e compromissos necessários para fazer parte do clã.",
+        "_blank"
+      );
     }, 1000);
   };
 
@@ -21,8 +25,8 @@ export default function JoinSection() {
         <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-8 rounded-lg max-w-2xl mx-auto">
           <div className="mobile-content skew-x-12">
             <p className="text-[#F3F9FE] mb-6">
-              Pronto para fazer parte de algo lendário? Junte-se ao TeenWolf{" "}
-              e experimente Smash Legends no seu melhor!
+              Pronto para fazer parte de algo lendário? Junte-se ao TeenWolf e
+              experimente Smash Legends no seu melhor!
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-[#423D77] bg-opacity-50 p-4 rounded-lg">

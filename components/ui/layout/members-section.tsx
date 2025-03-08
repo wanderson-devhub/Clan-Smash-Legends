@@ -11,10 +11,11 @@ export default function MembersSection() {
   return (
     <section
       id="members"
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-[url('https://wallpapercave.com/wp/wp13847282.png')] bg-cover bg-center bg-no-repeat bg-blend-overlay relative"
     >
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-b from-[#3A34A4] via-[#4268B0] to-[#5A6CD8] bg-clip-text text-transparent">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]"></div>
+      <div className="max-w-7xl mx-auto relative z-10">
+        <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-b from-[#bbbadb] via-[#cdd4f4] to-[#eaedf9] bg-clip-text text-transparent">
           Conheça Nosso Líder
         </h2>
 

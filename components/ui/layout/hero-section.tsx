@@ -24,32 +24,37 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]"
+      className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-[url('https://wallpapercave.com/wp/wp13847359.jpg')] bg-no-repeat bg-cover bg-center relative"
     >
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1d1e4d80] via-[#25276969] to-[#1d1e4d73]"></div>
+      <div className="max-w-7xl mx-auto text-center relative z-10">
         <div className="relative mb-8">
           <Image
             width={1000}
             height={1000}
             src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2000&h=800"
             alt="Banner Principal"
-            className="opacity-70 w-full h-[300px] sm:h-[400px] object-cover rounded-lg shadow-2xl"
+            className="w-full h-[300px] sm:h-[400px] object-cover rounded-lg shadow-2xl"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D1E4D] via-transparent to-transparent rounded-lg"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 overflow-hidden flex flex-col items-center">
-            <h1 className="text-[28px] leading-tight mb-2 sm:text-4xl sm:mb-4 font-bold bg-gradient-to-b from-[#8A84FF] via-[#92CEFF] to-[#AFBBFF] bg-clip-text text-transparent max-w-[90%] mx-auto">
+            <h1 className="text-[28px] leading-tight mb-2 sm:text-4xl sm:mb-4 font-bold text-white max-w-[90%] mx-auto">
               Bem-vindo ao Clã TeenWolf
             </h1>
-            <p className="text-base sm:text-lg text-[#80befc] drop-shadow-lg mb-6 max-w-[90%] mx-auto">
+            <p className="text-base sm:text-lg text-white drop-shadow-lg mb-6 max-w-[90%] mx-auto">
               Junte-se ao clã mais versátil do Smash Legends
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-              <a href="#join" onClick={handleJoinClick}>
+              <a
+                href="#join"
+                onClick={handleJoinClick}
+                className="w-full sm:w-auto"
+              >
                 <button
                   disabled={isLoading}
-                  className="disabled:opacity-70 transform skew-x-12 bg-gradient-to-b from-[#168AE9] to-[#31A4FD] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
+                  className="w-full disabled:opacity-70 transform skew-x-12 bg-gradient-to-b from-[#168AE9] to-[#31A4FD] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
                 >
-                  <span className="-skew-x-12 flex items-center gap-2">
+                  <span className="-skew-x-12 flex items-center justify-center gap-2">
                     {isLoading && (
                       <svg
                         className="animate-spin h-5 w-5 text-white"
@@ -72,13 +77,13 @@ export default function HeroSection() {
                         ></path>
                       </svg>
                     )}
-                    Junte-se
+                    Junte-se aqui
                   </span>
                 </button>
               </a>
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="transform skew-x-12 bg-gradient-to-b from-[#4663B9] to-[#4E69C2] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
+                className="w-full sm:w-auto transform skew-x-12 bg-gradient-to-b from-[#4663B9] to-[#4E69C2] text-white px-8 py-3 rounded hover:opacity-90 transition-opacity"
               >
                 <span className="-skew-x-12 block">Saiba Mais</span>
               </button>
