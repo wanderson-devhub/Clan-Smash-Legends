@@ -36,7 +36,7 @@ export default function MembersSection() {
                     onContextMenu={(e) => e.preventDefault()}
                   />
                   <Crown className="absolute top-0 right-1/3 h-6 w-6 text-[#ffee39]" />
-                  <div className="absolute -left-4 sm:-left-16 -top-5 sm:-top-6 transform -translate-x-full sm:-translate-x-0 animate-[float_6s_ease-in-out_infinite]">
+                  <div className="absolute -left-5 sm:-left-16 -top-5 sm:-top-6 transform -translate-x-full sm:-translate-x-0 animate-[float_6s_ease-in-out_infinite]">
                     <div className="relative">
                       <div className="bg-white p-2 sm:p-3 rounded-lg rounded-br-none shadow-lg after:content-[''] after:absolute after:right-0 after:bottom-0 after:border-[8px] after:border-transparent after:border-l-white after:translate-x-[15px] after:translate-y-[0.4px]">
                         <p className="text-[#293C87] text-xs sm:text-sm font-medium whitespace-nowrap">
