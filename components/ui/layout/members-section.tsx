@@ -36,6 +36,15 @@ export default function MembersSection() {
                     onContextMenu={(e) => e.preventDefault()}
                   />
                   <Crown className="absolute top-0 right-1/3 h-6 w-6 text-[#ffee39]" />
+                  <div className="absolute -left-4 sm:-left-16 -top-5 sm:-top-6 transform -translate-x-full sm:-translate-x-0 animate-[float_6s_ease-in-out_infinite]">
+                    <div className="relative">
+                      <div className="bg-white p-2 sm:p-3 rounded-lg rounded-br-none shadow-lg after:content-[''] after:absolute after:right-0 after:bottom-0 after:border-[8px] after:border-transparent after:border-l-white after:translate-x-[15px] after:translate-y-[0.4px]">
+                        <p className="text-[#293C87] text-xs sm:text-sm font-medium whitespace-nowrap">
+                          Juntos somos mais fortes! 💪
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <h3 className="text-xl font-bold text-white text-center mb-2">
                   lordwolf
@@ -75,7 +84,6 @@ export default function MembersSection() {
                 </div>
               </div>
             </div>
-
             {/* Member Card 2
           <div className="mobile-card transform -skew-x-12 bg-gradient-to-b from-[#293C87] to-[#25347C] border-l-4 border-r-4 border-[#4964AD] p-6 rounded-lg group hover:scale-105 transition-transform">
             <div className="mobile-content skew-x-12">
