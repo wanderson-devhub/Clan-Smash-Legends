@@ -46,7 +46,7 @@ export default function HeroSection() {
             <h1 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4 px-3 py-1  rounded-full text-[#fcf9f3] animate-welcome">
               Bem-vindo ao Clã TeenWolf
             </h1>
-            <p className="text-sm sm:text-lg mb-4 sm:mb-6 px-2 py-1 bg-[#1d1e4d99]  text-[#fdedcf]">
+            <p className="text-sm sm:text-lg mb-4 sm:mb-6 px-2 py-1 bg-[#1d1e4d99] rounded-full text-[#fdedcf]">
               Junte-se ao clã mais versátil do Smash Legends
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 w-full max-w-md mx-auto px-2">

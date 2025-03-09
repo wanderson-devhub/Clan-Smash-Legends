@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function MembersSection() {
   const { toast } = useToast();
   const handleCopyId = () => {
-    navigator.clipboard.writeText("ggeuy5adqudk");
+    navigator.clipboard.writeText("wa5da5h82");
   };
 
   return (
@@ -70,7 +70,7 @@ export default function MembersSection() {
                     }}
                     className="px-4 py-2 bg-[#423D77] rounded-lg text-[#BCB099] hover:bg-[#4964AD] transition-colors"
                   >
-                    Copiar ID: #WM12345
+                    Copiar ID: #wa5da5h82
                   </button>
                 </div>
               </div>
