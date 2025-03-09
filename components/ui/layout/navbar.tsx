@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 border-b border-[#4D4B80] bg-[#1D1E4D] bg-opacity-95 backdrop-blur-sm">
+    <nav className="fixed w-full z-50 border-b border-[#4D4B80] bg-[#1D1E4D] bg-opacity-90 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -16,7 +16,18 @@ export default function Navbar() {
             <a
               href="#home"
               className="flex items-center space-x-1 transition-all duration-400"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsMenuOpen(false);
+                const element = document.getElementById('home');
+                const navHeight = 80; // altura do nav
+                const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }}
             >
               <div className="relative">
                 <Image
@@ -72,6 +83,17 @@ export default function Navbar() {
             <a
               href="#about"
               className="group relative px-4 py-2 text-[#F3F9FE] hover:text-[#BCB099] transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('about');
+                const navHeight = 80;
+                const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }}
             >
               <span className="relative z-10">Sobre</span>
               <div className="absolute inset-0 h-1 w-0 bg-gradient-to-r from-purple-600 to-pink-600 bottom-0 group-hover:w-full transition-all duration-300"></div>
@@ -79,6 +101,17 @@ export default function Navbar() {
             <a
               href="#achievements"
               className="group relative px-4 py-2 text-[#F3F9FE] hover:text-[#BCB099] transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('achievements');
+                const navHeight = 80;
+                const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }}
             >
               <span className="relative z-10">Conquistas</span>
               <div className="absolute inset-0 h-1 w-0 bg-gradient-to-r from-purple-600 to-pink-600 bottom-0 group-hover:w-full transition-all duration-300"></div>
@@ -86,6 +119,17 @@ export default function Navbar() {
             <a
               href="#members"
               className="group relative px-4 py-2 text-[#F3F9FE] hover:text-[#BCB099] transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('members');
+                const navHeight = 80;
+                const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }}
             >
               <span className="relative z-10">Membros</span>
               <div className="absolute inset-0 h-1 w-0 bg-gradient-to-r from-purple-600 to-pink-600 bottom-0 group-hover:w-full transition-all duration-300"></div>
@@ -93,6 +137,17 @@ export default function Navbar() {
             <a
               href="#join"
               className="px-6 py-2 text-[#F3F9FE] bg-gradient-to-r from-purple-600 to-pink-600 rounded-full hover:scale-110 transition-transform duration-300 hover:shadow-lg hover:shadow-purple-500/50"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('join');
+                const navHeight = 80;
+                const elementPosition = element?.getBoundingClientRect().top ?? 0;
+                const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+                });
+              }}
             >
               Junte-se
             </a>
@@ -110,7 +165,18 @@ export default function Navbar() {
           <a
             href="#about"
             className="block px-4 py-3 text-[#F3F9FE] hover:text-[#BCB099] rounded-lg hover:bg-[#2A2B5F] transition-all duration-300"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMenuOpen(false);
+              const element = document.getElementById('about');
+              const navHeight = 80;
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }}
           >
             <div className="flex items-center space-x-3">
               <svg
@@ -133,7 +199,18 @@ export default function Navbar() {
           <a
             href="#achievements"
             className="block px-4 py-3 text-[#F3F9FE] hover:text-[#BCB099] rounded-lg hover:bg-[#2A2B5F] transition-all duration-300"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMenuOpen(false);
+              const element = document.getElementById('achievements');
+              const navHeight = 80;
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }}
           >
             <div className="flex items-center space-x-3">
               <svg
@@ -156,7 +233,18 @@ export default function Navbar() {
           <a
             href="#members"
             className="block px-4 py-3 text-[#F3F9FE] hover:text-[#BCB099] rounded-lg hover:bg-[#2A2B5F] transition-all duration-300"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMenuOpen(false);
+              const element = document.getElementById('members');
+              const navHeight = 80;
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }}
           >
             <div className="flex items-center space-x-3">
               <svg
@@ -179,7 +267,18 @@ export default function Navbar() {
           <a
             href="#join"
             className="block px-4 py-3 text-center text-[#F3F9FE] bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:scale-105 transition-transform duration-300"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => {
+              e.preventDefault();
+              setIsMenuOpen(false);
+              const element = document.getElementById('join');
+              const navHeight = 80;
+              const elementPosition = element?.getBoundingClientRect().top ?? 0;
+              const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }}
           >
             <div className="flex items-center justify-center space-x-3">
               <svg
