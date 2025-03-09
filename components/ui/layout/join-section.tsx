@@ -55,7 +55,7 @@ export default function JoinSection() {
             <button
               onClick={handleApply}
               disabled={isLoading}
-              className="disabled:opacity-70 j transition-all ease-in-out bg-gradient-to-b from-[#00A019] to-[#3EBC00] text-white px-8 py-3 rounded hover:opacity-90 transform hover:scale-105 relative"
+              className="disabled:opacity-70 transition-all ease-in-out bg-gradient-to-b from-[#00A019] to-[#3EBC00] text-white px-8 py-3 rounded hover:opacity-90 transform hover:scale-105 relative"
             >
               <div className="flex items-center justify-center">
                 {isLoading && (
