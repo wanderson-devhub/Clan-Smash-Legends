@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TeenWolf - Smash Legends",
+  title: "Killer Wolves - Smash Legends",
   description: "Clã do Smash Legends",
   icons: {
     icon: "/images/favicon.ico",

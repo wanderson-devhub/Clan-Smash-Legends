@@ -1,6 +1,6 @@
-# Teen Wolf Clan - Smash Legends
+# Killer Wolves Clan - Smash Legends
 
-Bem-vindo ao repositório do Clã Teen Wolf, a elite do Smash Legends! Este projeto representa a página principal do nosso clã, destacando nossas conquistas, membros e como você pode se juntar a nós.
+Bem-vindo ao repositório do Clã Killer Wolves, a elite do Smash Legends! Este projeto representa a página principal do nosso clã, destacando nossas conquistas, membros e como você pode se juntar a nós.
 
 ## Visão Geral
 

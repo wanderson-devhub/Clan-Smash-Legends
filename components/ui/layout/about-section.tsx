@@ -21,7 +21,7 @@ export default function AboutSection() {
             </div>
             <div className="text-[#F3F9FE] mb-6">
               <p className="mb-4">
-                TeenWolf é um dos clãs mais versáteis do Smash Legends.
+                Killer Wolves é um dos clãs mais versáteis do Smash Legends.
                 Valorizamos trabalho em equipe, estratégia e dedicação. Nossos
                 membros são cuidadosamente selecionados para manter nossos altos
                 padrões e vantagem competitiva.

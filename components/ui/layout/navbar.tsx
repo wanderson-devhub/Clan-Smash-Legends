@@ -41,8 +41,8 @@ export default function Navbar() {
                 />
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600/40 to-pink-600/40 rounded-full blur opacity-20 group-hover:opacity-70 transition duration-300"></div>
               </div>
-              <span className="w-[170px] font-bold italic text-3xl bg-gradient-to-r from-[#F3F9FE] via-[#BCB099] to-purple-500 bg-[length:200%_auto] text-transparent bg-clip-text hover:bg-[position:_100%] transition-[background-position] duration-400 ease-in-out">
-                TeenWolf
+              <span className="w-[197px] font-bold italic text-3xl bg-gradient-to-r from-[#F3F9FE] via-[#BCB099] to-purple-500 bg-[length:200%_auto] text-transparent bg-clip-text hover:bg-[position:_100%] transition-[background-position] duration-400 ease-in-out">
+                Killer Wolves
               </span>
             </a>
           </div>

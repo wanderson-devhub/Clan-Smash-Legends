@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <div className="text-center md:text-left">
             <p className="text-sm sm:text-base">
-              © 2024 Clã TeenWolf. Todos os direitos reservados para o jogo{" "}
+              © 2024 Clã Killer Wolves. Todos os direitos reservados para o jogo{" "}
               <a
                 href="https://smashlegends.com/"
                 target="_blank"

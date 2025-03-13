@@ -20,6 +20,7 @@ export default function HeroSection() {
       window.location.href = "#join";
     }, 1000);
   };
+
   return (
     <section id="home" className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 relative">
       <video
@@ -44,7 +45,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#1D1E4D] via-transparent to-transparent rounded-lg"></div>
           <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-8 flex flex-col items-center">
             <h1 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4 px-3 py-1  rounded-full text-[#fcf9f3] animate-welcome">
-              Bem-vindo ao Clã TeenWolf
+              Bem-vindo ao Clã Killer Wolves
             </h1>
             <p className="text-sm sm:text-lg mb-4 sm:mb-6 px-2 py-1 bg-[#1d1e4d99] rounded-full text-[#fdedcf]">
               Junte-se ao clã mais versátil do Smash Legends
